@@ -1,4 +1,6 @@
-# Regex - /(NOK\s?\d+)|(\d+\s?kr)|(kr\s?\d+[,|\.]?\d+)|(\d+[,|\.]?\d+)/
+# Purpose - find regex for parsing norwegian money
+## Result
+`/(NOK\s?\d+)|(\d+\s?kr)|(kr\s?\d+[,|\.]?\d+)|(\d+[,|\.]?\d+)/`
 ## Examples of parsed money formats:
 * NOK 52
 * 52kr

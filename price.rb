@@ -58,9 +58,9 @@ text = "OSLO S 270.5"
 p assert(text.scan(regex).flatten.compact, ['270.5'])
 
 # Real Text 3
-text = "OSLO S 270"
+text = "OSLO S 52"
 
-p assert(text.scan(regex).flatten.compact, ['270'])
+p assert(text.scan(regex).flatten.compact, ['52'])
 
 
 

@@ -10,7 +10,7 @@ def assert(value1, value2)
 end
 
 
-regex = /(NOK\s?\d+)|(\d+\s?kr)|(kr\s?\d+[,|\.]?\d+)|(\d+[,|\.]?\d+)/
+regex = /(NOK\s?\d+)|(\d+\s?kr)|(kr\s?\d+[,|\.]?\d+)|(\d+[,|\.]?\d+)|(\d+)/
 # TEST 1
 example = 'NOK 52'
 text = "erik #{example} anders"
@@ -38,7 +38,7 @@ p assert(text.scan(regex).flatten.compact, [])
 # TEST 7
 example = '1'
 text = "erik #{example} anders"
-p assert(text.scan(regex).flatten.compact, [])
+p assert(text.scan(regex).flatten.compact, ['1'])
 # TEST 8
 example = 'kr52'
 text = "erik #{example} anders"
@@ -50,7 +50,7 @@ p assert(text.scan(regex).flatten.compact, [example])
 text = "OSLO S - OSLO LUFTHAVN 12. jun 2015 Avreise: 06:24 Ankomst: 06:47 Ingen bestemt plass 3 Voksne Pris: 249,99- Total Pris: 249,99- Mva: 8% Gr.lag: 249,99 Mva kr: 20,01"
 
 # Real Text 1
-p assert(text.scan(regex).flatten.compact, ["12", "2015", "06", "24", "06", "47", "249,99", "249,99", "249,99", "20,01"])
+p assert(text.scan(regex).flatten.compact, ["12", "2015", "06", "24", "06", "47", "3", "249,99", "249,99", "8", "249,99", "20,01"])
 
 # Real Text 2
 text = "OSLO S 270.5"

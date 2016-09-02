@@ -1,14 +1,4 @@
-require 'colorize'
-
-def assert(value1, value2)
-  if value1 === value2
-    puts "Success".colorize(:green)
-  else
-    puts "Failure. `#{value1.inspect}` is not equal `#{value2.inspect}`".colorize(:red)
-  end
-
-end
-
+require_relative 'assert'
 
 regex = /(NOK\s?\d+)|(\d+\s?kr)|(kr\s?\d+[,|\.]?\d+)|(\d+[,|\.]?\d+)|(\d+)/
 # TEST 1

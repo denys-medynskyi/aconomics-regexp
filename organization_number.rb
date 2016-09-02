@@ -1,6 +1,6 @@
 require_relative 'assert'
 regex = /(\b\d{9}\b)|(\b\d{3}\b\s\b\d{3}\b\s\b\d{3}\b)/
-# (\d{3}\s\d{3}\s\d{3})/
+
 # * 996678601
 # * 996 678 601
 

@@ -24,6 +24,11 @@
 * 13. sep. 2003
 * 1 mai 2016
 
+# Organization number regexp
+`/(\b\d{9}\b)|(\b\d{3}\b\s\b\d{3}\b\s\b\d{3}\b)/`
+## Examples of organization numbers:
+* 996678601
+* 996 678 601
 
 ## Setup
 * git clone git@github.com:skrypalyk/norwegian-money-regexp.git

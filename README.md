@@ -34,3 +34,5 @@
 * git clone git@github.com:skrypalyk/norwegian-money-regexp.git
 * bundle
 * ruby price.rb
+* ruby date.rb
+* ruby organization_number.rb

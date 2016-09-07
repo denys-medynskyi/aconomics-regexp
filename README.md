@@ -23,6 +23,30 @@
 * 11 jun 2003
 * 13. sep. 2003
 * 1 mai 2016
+## Other currency symbols
+```
+  CURRENCY_SYMBOLS = {
+    '$'    => 'USD',
+    '€'    => 'EUR',
+    '£'    => 'GBP',
+    '₤'    => 'GBP',
+    'R$'   => 'BRL',
+    'R'    => 'ZAR',
+    '¥'    => 'JPY',
+    'C$'   => 'CAD',
+    '₼'    => 'AZN',
+    '元'   => 'CNY',
+    'Kč'   => 'CZK',
+    'Ft'   => 'HUF',
+    '₹'    => 'INR',
+    '₽'    => 'RUB',
+    '₺'    => 'TRY',
+    '₴'    => 'UAH',
+    'Fr'   => 'CHF',
+    'zł'   => 'PLN',
+    '₸'    => 'KZT'
+  }
+```
 
 # Organization number regexp
 `/(\b\d{9}\b)|(\b\d{3}\b\s\b\d{3}\b\s\b\d{3}\b)/`

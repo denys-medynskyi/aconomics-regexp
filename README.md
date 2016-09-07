@@ -23,6 +23,7 @@
 * 11 jun 2003
 * 13. sep. 2003
 * 1 mai 2016
+
 ## Other currency symbols
 ```
   CURRENCY_SYMBOLS = {
